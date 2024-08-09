@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: snow;
+  }
+  header {
+    border: 1px solid white;
+  
+    background-color: snow;
+  }
+  .logo img {
+    margin: 10px;
+  }
+  nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .right ul{
+      display: flex;
+      gap: 34px;
+  
+     
+  }
+  .right ul li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+  }
+  ul li:hover{
+      cursor: pointer;
+  }
+  .main{
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 25px;
+    gap: 40px;
+  }
+  .first{
+    height: 22vw;
+  }
+  .btn{
+    background-color: rgba(113, 221, 221, 0.889);
+    color: white;
+    padding: 15px 60px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: medium;
+    cursor: pointer;
+  }
+  .btn-small{
+    padding: 8px 12px;
+    margin:  5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button.blue{
+    background-color: rgba(10, 173, 237, 0.812);
+  }
+  button.green{
+    background-color: green;
+  }
+  .main span{
+    font-size: 45px;
+  }
+  .line2{
+    font-size: 25px;
+    text-align: center;
+    
+  }
+  .main button:hover{
+    background-color:rgba(2, 160, 160, 0.977) ;
+    cursor: pointer;
+  }
+
+  .second{
+    height: 50vw;
+    max-width: 60vw;
+    margin: auto
+   
+  }
+  .download{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  div.download:nth-child(1){
+    font-size: 30px;
+  }
+ .small{
+  font-size: 15px;
+ }
+ .lang{
+ 
+ text-align: center;
+  margin-bottom: 50px;
+  font-size: 25px;
+ }
+ .item{
+width: 35vh;
+  padding: 8px;
+  margin: 10px;
+
+ border-radius: 5px;
+  background-color: #cad4dd;
+ }
+ .flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+
+ }
+ .grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  margin: auto;
+ }
+
+ .third{
+  height: 85vh;
+  width: 100%;
+  margin-top: 100px;
+  background-color: rgb(21, 21, 21);
+  color: white;
+ }
+
+ .container{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly; 
+  margin-top: 0px;
+  
+ }
+ .form{
+  height: 200px;
+  width: 300px;
+  background-color: whitesmoke;
+  padding: 12px;
+  margin: 25px;
+  border: 2pxs solid white;
+  border-radius: 8px;
+ }
+ .data h2{
+  padding: 15px;
+  margin-top: 10px;
+ }
+ .give-data{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+
+ }
+ .give-data input{
+  height: 32px;
+ }
+ .give-data h4{
+  color: black;
+ }
+ .give-data button{
+  background-color: #00b6d1;
+  color: white;
+  font-weight: 400px;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  border-color: #4daaf2 !important;
+  box-shadow: 0 12px 18px -6px rgba(77, 170, 242, .37);
+  cursor: pointer;
+
+ }
+
+ .form h1{
+  color: #00b6d1 !important;
+  padding-bottom: 35px;
+ }
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+
+  @media screen and (max-width: 1200px ) {
+    .right ul{
+      
+      flex-direction: column;
+      gap: 2px;
+
+    }
+     .container{
+      flex-direction: column;
+    }
+
+    .main{
+      height: 35vh;
+      
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+    }
+    .first{
+      height: 50vw;
+    }
+   
+    .grid{
+     
+      grid-template-columns: 1fr 1fr;
+      margin: 2px;
+    }
+    .item{
+      width: 30vh;
+       }
+
+       /* .third{
+        height: 50vw;
+        width: 100%;
+        margin-top: 500px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+      
+       } */
+       
+  @media  screen and (max-width: 450px) {
+    .first{
+      height: 90vw;
+    }
+
+    .grid{
+      grid-template-columns: 1fr;
+    }
+    .item{
+      width: 25vh;
+       }
+       .flex{
+        flex-direction: column;
+       }
+    
+  }
